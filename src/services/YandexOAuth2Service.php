@@ -38,12 +38,12 @@ class YandexOAuth2Service extends Service
 	{
 		$info = $this->makeSignedRequest('https://login.yandex.ru/info');
 
-		$this->attributes['id'] = $info['id'];
-		$this->attributes['name'] = $info['real_name'];
-		//$this->attributes['login'] = $info['display_name'];
-		//$this->attributes['email'] = $info['emails'][0];
-		//$this->attributes['email'] = $info['default_email'];
-		$this->attributes['gender'] = ($info['sex'] == 'male') ? 'M' : 'F';
+    $this->attributes['id'] = $info['id'];
+    $this->attributes['first_name'] = $info['first_name'];
+    $this->attributes['last_name'] = $info['last_name'];
+    $this->attributes['email'] = $info['default_email'];
+    $this->attributes['birthdate'] = $info['birthday'];
+    $this->attributes['gender'] = $info['sex'];
 
 		return true;
 	}

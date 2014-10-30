@@ -43,14 +43,20 @@ class TwitterOAuth1Service extends Service
 	{
 		$info = $this->makeSignedRequest('account/verify_credentials.json');
 
-		$this->attributes['id'] = $info['id'];
-		$this->attributes['name'] = $info['name'];
-		$this->attributes['url'] = 'http://twitter.com/account/redirect_by_id?id=' . $info['id_str'];
+    $this->attributes['id'] = $info['id'];
 
-		/*$this->attributes['username'] = $info['screen_name'];
-		$this->attributes['language'] = $info['lang'];
-		$this->attributes['timezone'] = timezone_name_from_abbr('', $info['utc_offset'], date('I'));
-		$this->attributes['photo'] = $info['profile_image_url'];*/
+    $names = explode(' ', $info['name']);
+    if (count($names) == 2) {
+      $this->attributes['first_name'] = $names[0];
+      $this->attributes['last_name'] = $names[1];
+    } else {
+      $this->attributes['first_name'] = $info['name'];
+      $this->attributes['last_name'] = '';
+    }
+
+    $this->attributes['birthdate'] = '';
+    $this->attributes['gender'] = '';
+    $this->attributes['url'] = 'http://twitter.com/account/redirect_by_id?id=' . $info['id_str'];
 
 		return true;
 	}
