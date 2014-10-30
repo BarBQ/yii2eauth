@@ -7,16 +7,16 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\oauth;
+namespace barbq\eauth\oauth;
 
 use Yii;
 use OAuth\Common\Http\Uri\Uri;
 use OAuth\Common\Http\Client\ClientInterface;
 use OAuth\Common\Token\TokenInterface;
 use OAuth\Common\Storage\TokenStorageInterface;
-use nodge\eauth\EAuth;
-use nodge\eauth\IAuthService;
-use nodge\eauth\ErrorException;
+use barbq\eauth\EAuth;
+use barbq\eauth\IAuthService;
+use barbq\eauth\ErrorException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
 
@@ -25,7 +25,7 @@ use yii\helpers\Url;
  *
  * @package application.extensions.eauth
  */
-abstract class ServiceBase extends \nodge\eauth\ServiceBase implements IAuthService
+abstract class ServiceBase extends \barbq\eauth\ServiceBase implements IAuthService
 {
 
 	/**
@@ -89,7 +89,7 @@ abstract class ServiceBase extends \nodge\eauth\ServiceBase implements IAuthServ
 	}
 
 	/**
-	 * @return \nodge\eauth\oauth1\ServiceProxy|\nodge\eauth\oauth2\ServiceProxy
+	 * @return \barbq\eauth\oauth1\ServiceProxy|\barbq\eauth\oauth2\ServiceProxy
 	 */
 	abstract protected function getProxy();
 

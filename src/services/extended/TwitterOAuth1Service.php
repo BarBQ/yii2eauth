@@ -7,9 +7,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\services\extended;
+namespace barbq\eauth\services\extended;
 
-class TwitterOAuth1Service extends \nodge\eauth\services\TwitterOAuth1Service
+class TwitterOAuth1Service extends \barbq\eauth\services\TwitterOAuth1Service
 {
 
 	protected function fetchAttributes()

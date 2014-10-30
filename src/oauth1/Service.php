@@ -7,17 +7,17 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\oauth1;
+namespace barbq\eauth\oauth1;
 
 use Yii;
 use OAuth\Common\Exception\Exception as OAuthException;
 use OAuth\Common\Http\Uri\Uri;
 use OAuth\Common\Consumer\Credentials;
 use OAuth\OAuth1\Signature\Signature;
-use nodge\eauth\EAuth;
-use nodge\eauth\ErrorException;
-use nodge\eauth\IAuthService;
-use nodge\eauth\oauth\ServiceBase;
+use barbq\eauth\EAuth;
+use barbq\eauth\ErrorException;
+use barbq\eauth\IAuthService;
+use barbq\eauth\oauth\ServiceBase;
 
 /**
  * EOAuthService is a base class for all OAuth providers.

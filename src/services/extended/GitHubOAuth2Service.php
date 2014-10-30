@@ -7,9 +7,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\services\extended;
+namespace barbq\eauth\services\extended;
 
-class GitHubOAuth2Service extends \nodge\eauth\services\GitHubOAuth2Service
+class GitHubOAuth2Service extends \barbq\eauth\services\GitHubOAuth2Service
 {
 
 	protected function fetchAttributes()

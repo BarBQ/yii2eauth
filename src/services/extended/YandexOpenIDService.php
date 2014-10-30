@@ -7,9 +7,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\services\extended;
+namespace barbq\eauth\services\extended;
 
-class YandexOpenIDService extends \nodge\eauth\services\YandexOpenIDService
+class YandexOpenIDService extends \barbq\eauth\services\YandexOpenIDService
 {
 
 	protected $jsArguments = array('popup' => array('width' => 900, 'height' => 620));

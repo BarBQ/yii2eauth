@@ -7,9 +7,9 @@
 	"license": "New BSD License",
 	"authors": [
 		{
-			"name": "Maxim Zemskov",
-			"email": "nodge@yandex.ru",
-			"homepage": "http://nodge.ru/"
+			"name": "Alexander Nikitin",
+			"email": "nikitin-a-g@yandex.ru",
+			"homepage": ""
 		}
 	],
 	"support": {
@@ -17,7 +17,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"nodge\\eauth\\": "src/"
+			"barbq\\eauth\\": "src/"
 		}
 	},
 	"require": {
@@ -28,6 +28,6 @@
 		"nodge/lightopenid": "~1.1.0"
 	},
 	"extra": {
-		"bootstrap": "nodge\\eauth\\Bootstrap"
+		"bootstrap": "barbq\\eauth\\Bootstrap"
 	}
 }

@@ -7,9 +7,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\services\extended;
+namespace barbq\eauth\services\extended;
 
-class GoogleOpenIDService extends \nodge\eauth\services\GoogleOpenIDService
+class GoogleOpenIDService extends \barbq\eauth\services\GoogleOpenIDService
 {
 
 	//protected $jsArguments = array('popup' => array('width' => 450, 'height' => 450));

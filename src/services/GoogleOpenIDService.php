@@ -7,9 +7,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\services;
+namespace barbq\eauth\services;
 
-use nodge\eauth\openid\Service;
+use barbq\eauth\openid\Service;
 
 /**
  * Google provider class.

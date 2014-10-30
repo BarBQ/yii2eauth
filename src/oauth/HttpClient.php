@@ -7,7 +7,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\oauth;
+namespace barbq\eauth\oauth;
 
 use Yii;
 use OAuth\Common\Http\Client\AbstractClient;

@@ -9,10 +9,10 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\services;
+namespace barbq\eauth\services;
 
 use OAuth\OAuth1\Token\TokenInterface;
-use nodge\eauth\oauth1\Service;
+use barbq\eauth\oauth1\Service;
 
 
 /**

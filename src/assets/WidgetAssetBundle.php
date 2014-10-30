@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace nodge\eauth\assets;
+namespace barbq\eauth\assets;
 
 use yii\web\AssetBundle;
 

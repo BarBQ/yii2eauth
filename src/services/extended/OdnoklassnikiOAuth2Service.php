@@ -7,9 +7,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\services\extended;
+namespace barbq\eauth\services\extended;
 
-class OdnoklassnikiOAuth2Service extends \nodge\eauth\services\OdnoklassnikiOAuth2Service
+class OdnoklassnikiOAuth2Service extends \barbq\eauth\services\OdnoklassnikiOAuth2Service
 {
 
 	protected $scopes = array(self::SCOPE_VALUABLE_ACCESS);

@@ -7,9 +7,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\services\extended;
+namespace barbq\eauth\services\extended;
 
-class VKontakteOAuth2Service extends \nodge\eauth\services\VKontakteOAuth2Service
+class VKontakteOAuth2Service extends \barbq\eauth\services\VKontakteOAuth2Service
 {
 
 	// protected $scope = 'friends';

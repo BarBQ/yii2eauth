@@ -7,7 +7,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth;
+namespace barbq\eauth;
 
 use Yii;
 use yii\base\Object;
@@ -51,14 +51,14 @@ class EAuth extends Object
 	 * @var array TokenStorage class.
 	 */
 	protected $tokenStorage = array(
-		'class' => 'nodge\eauth\oauth\SessionTokenStorage',
+		'class' => 'barbq\eauth\oauth\SessionTokenStorage',
 	);
 
 	/**
 	 * @var array HttpClient class.
 	 */
 	protected $httpClient = array(
-		'class' => 'nodge\eauth\oauth\HttpClient',
+		'class' => 'barbq\eauth\oauth\HttpClient',
 //		'useStreamsFallback' => false,
 	);
 

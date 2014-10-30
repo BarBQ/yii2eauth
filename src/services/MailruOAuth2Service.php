@@ -9,9 +9,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
-namespace nodge\eauth\services;
+namespace barbq\eauth\services;
 
-use nodge\eauth\oauth2\Service;
+use barbq\eauth\oauth2\Service;
 
 /**
  * Mail.Ru provider class.
