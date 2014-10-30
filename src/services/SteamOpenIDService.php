@@ -3,7 +3,7 @@
  * SteamOpenIDService class file.
  *
  * @author Dmitry Ananichev <a@qozz.ru>
- * @link http://github.com/Nodge/yii2-eauth/
+ * @link http://github.com/BarBQ/yii2eauth/
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 

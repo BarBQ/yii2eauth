@@ -6,10 +6,7 @@ Supported protocols: OpenID, OAuth 1.0 and OAuth 2.0.
 
 EAuth is a extension for provide a unified (does not depend on the selected service) method to authenticate the user. So, the extension itself does not perform login, does not register the user and does not bind the user accounts from different providers.
 
-* [Demo](http://nodge.ru/yii-eauth/demo2/)
-* [Demo project](https://github.com/Nodge/yii2-eauth-demo/)
 * [Installation](#installation)
-* [Version for yii 1.1](https://github.com/Nodge/yii-eauth/)
 
 ### Why own extension and not a third-party service?
 The implementation of the authorization on your own server has several advantages:
@@ -61,9 +58,7 @@ The implementation of the authorization on your own server has several advantage
 
 ### Resources
 
-* [Yii EAuth](https://github.com/Nodge/yii2-eauth)
-* [Demo](http://nodge.ru/yii-eauth/demo2/)
-* [Demo project](https://github.com/Nodge/yii2-eauth-demo/)
+* [Yii EAuth](https://github.com/BarBQ/yii2eauth)
 * [Yii Framework](http://yiiframework.com/)
 * [OpenID](http://openid.net/)
 * [OAuth](http://oauth.net/)
@@ -82,7 +77,7 @@ The implementation of the authorization on your own server has several advantage
 
 # Installation
 
-This library can be found on [Packagist](https://packagist.org/packages/nodge/yii2-eauth).
+This library can be found on [Packagist](https://packagist.org/packages/barbq/yii2eauth).
 The recommended way to install this is through [composer](http://getcomposer.org).
 
 Edit your `composer.json` and add:
@@ -104,11 +99,6 @@ $ php composer.phar install
 
 
 # Usage
-
-## Demo project
-
-The source code of the [demo](http://nodge.ru/yii-eauth/demo2/) is available [here](https://github.com/Nodge/yii2-eauth-demo/).
-
 
 ## Basic setup
 
@@ -484,4 +474,4 @@ Available translations can be found in `@eauth/src/messages`.
 
 # License
 
-The extension was released under the [New BSD License](http://www.opensource.org/licenses/bsd-license.php), so you'll find the latest version on [GitHub](https://github.com/Nodge/yii2-eauth).
+The extension was released under the [New BSD License](http://www.opensource.org/licenses/bsd-license.php), so you'll find the latest version on [GitHub](https://github.com/BarBQ/yii2eauth).

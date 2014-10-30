@@ -1,7 +1,7 @@
 /*
  * Yii EAuth extension.
  * @author Maxim Zemskov
- * @link http://github.com/Nodge/yii2-eauth/
+ * @link http://github.com/BarBQ/yii2eauth/
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 (function ($) {

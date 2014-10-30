@@ -2,8 +2,8 @@
 /**
  * Widget class file.
  *
- * @author Maxim Zemskov <nodge@yandex.ru>
- * @link http://github.com/Nodge/yii2-eauth/
+ * @author Alexander Nikitin <nikitin-a-g@yandex.ru>
+ * @link http://github.com/BarBQ/yii2eauth/
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
@@ -49,7 +49,7 @@ class Widget extends \yii\base\Widget
 	 * @var boolean include the CSS file. Default is true.
 	 * If this is set false, you are responsible to explicitly include the necessary CSS file in your page.
 	 */
-	public $assetBundle = 'nodge\\eauth\\assets\\WidgetAssetBundle';
+	public $assetBundle = 'barbq\\eauth\\assets\\WidgetAssetBundle';
 
 	/**
 	 * Initializes the widget.

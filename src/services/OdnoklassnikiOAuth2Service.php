@@ -6,8 +6,8 @@
  * Manage your applications: http://www.odnoklassniki.ru/dk?st.cmd=appsInfoMyDevList&st._aid=Apps_Info_MyDev
  * Note: Enabling this service a little more difficult because of the authorization policy of the service.
  *
- * @author Maxim Zemskov <nodge@yandex.ru>
- * @link http://github.com/Nodge/yii2-eauth/
+ * @author Alexander Nikitin <nikitin-a-g@yandex.ru>
+ * @link http://github.com/BarBQ/yii2eauth/
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 

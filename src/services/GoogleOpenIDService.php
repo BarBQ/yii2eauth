@@ -2,8 +2,8 @@
 /**
  * GoogleOpenIDService class file.
  *
- * @author Maxim Zemskov <nodge@yandex.ru>
- * @link http://github.com/Nodge/yii2-eauth/
+ * @author Alexander Nikitin <nikitin-a-g@yandex.ru>
+ * @link http://github.com/BarBQ/yii2eauth/
  * @license http://www.opensource.org/licenses/bsd-license.php
  */
 
