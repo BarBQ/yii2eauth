@@ -27,10 +27,14 @@ if ($popup) {
 		<?php
 		foreach ($services as $name => $service) {
 			echo '<li class="eauth-service eauth-service-id-' . $service->id . '">';
-			echo Html::a($service->title, array($action, 'service' => $name), array(
-				'class' => 'eauth-service-link',
-				'data-eauth-service' => $service->id,
-			));
+			$attrs = array(
+				'class' => 'eauth-service-link'
+			);
+			if ($service->id != 'instagram') {
+				$attrs['data-eauth-service'] = $service->id;
+			}
+
+			echo Html::a($service->title, array($action, 'service' => $name), $attrs);
 			echo '</li>';
 		}
 		?>
