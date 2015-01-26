@@ -41,20 +41,19 @@ class VKontakteOAuth2Service extends Service
 		$tokenData = $this->getAccessTokenData();
 		$info = $this->makeSignedRequest('users.get.json', array(
 			'query' => array(
-				'uids' => $tokenData['params']['user_id'],
-				'fields' => '', // uid, first_name and last_name is always available
-				//'fields' => 'nickname, sex, bdate, city, country, timezone, photo, photo_medium, photo_big, photo_rec',
+				'uids'   => $tokenData['params']['user_id'],
+				'fields' => 'uid,first_name,last_name,sex,bdate,photo,photo_medium,photo_big',
 			),
 		));
 
 		$info = $info['response'][0];
 
-    $this->attributes['id'] = $info['uid'];
-    $this->attributes['first_name'] = $info['first_name'];
-    $this->attributes['last_name'] = $info['last_name'];
-    $this->attributes['email'] = '';
-    $this->attributes['birthdate'] = '';
-    $this->attributes['gender'] = isset($info['sex']) && $info['sex'] == 1 ? 'female' : 'male';
+		$this->attributes['id'] = $info['uid'];
+		$this->attributes['first_name'] = $info['first_name'];
+		$this->attributes['last_name'] = $info['last_name'];
+		$this->attributes['email'] = '';
+		$this->attributes['birthdate'] = date("Y-m-d",strtotime($info['bdate']));
+		$this->attributes['gender'] = $info['sex'] == 1 ? 'female' : 'male';
 
 		return true;
 	}
